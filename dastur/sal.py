@@ -1,0 +1,10 @@
+moshinalar = []
+moshinalar = "malibu"
+
+
+
+
+
+
+
+
