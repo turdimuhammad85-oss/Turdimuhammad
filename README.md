@@ -1,59 +1,34 @@
-import tkinter as tk
-import random
+# 👋 Salom! Men Turdimuhammad
 
-oyna = tk.Tk()
-oyna.title("🎮 Kvadratni ushla")
-oyna.geometry("600x500")
-oyna.resizable(False, False)
+<p align="center">
+  <h2 align="center">🚀 TURDIMUHAMMAD</h2>
+</p>
 
-ochko = 0
-vaqt = 30
+<p align="center">
+  🐍 Python Developer | 🎮 Game Developer | 💻 Beginner Programmer
+</p>
 
-canvas = tk.Canvas(oyna, width=600, height=400, bg="black")
-canvas.pack()
+---
 
-matn = tk.Label(oyna, text="Ochko: 0 | Vaqt: 30",
-                font=("Arial", 18))
-matn.pack()
+## 🐍 GitHub Snake
 
-def kvadrat_yarat():
-    canvas.delete("kvadrat")
+![Snake Animation](https://raw.githubusercontent.com/turdimuhammad85-oss/Turdimuhammad/output/github-contribution-grid-snake.svg)
 
-    x = random.randint(30, 550)
-    y = random.randint(30, 350)
+---
 
-    canvas.create_rectangle(
-        x, y, x + 40, y + 40,
-        fill="red",
-        tags="kvadrat"
-    )
+## 👨‍💻 Men haqimda
 
-def bosildi(event):
-    global ochko
+- 🐍 Python dasturlashni o‘rganayapman
+- 🎮 Python yordamida o‘yinlar yarataman
+- 💻 Git va GitHub bilan ishlayman
+- 🚀 Yangi loyihalar yaratishga qiziqaman
 
-    ochko += 1
-    matn.config(text=f"Ochko: {ochko} | Vaqt: {vaqt}")
-    kvadrat_yarat()
+---
 
-def vaqtni_kamaytir():
-    global vaqt
+## 🛠️ Texnologiyalar
 
-    if vaqt > 0:
-        vaqt -= 1
-        matn.config(text=f"Ochko: {ochko} | Vaqt: {vaqt}")
-        oyna.after(1000, vaqtni_kamaytir)
-    else:
-        canvas.delete("all")
-        canvas.create_text(
-            300, 200,
-            text=f"O'YIN TUGADI!\nOchko: {ochko}",
-            fill="white",
-            font=("Arial", 30)
-        )
-
-canvas.bind("<Button-1>", bosildi)
-
-kvadrat_yarat()
-vaqtni_kamaytir()
-
-oyna.mainloop()
+```text
+🐍 Python
+🎨 Tkinter
+🔧 Git
+🐙 GitHub
